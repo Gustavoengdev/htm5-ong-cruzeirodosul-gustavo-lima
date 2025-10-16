@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Meio Ambiente</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #49c0e4 0%, #b2f7ef 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #eafffa;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px 32px 32px 32px;
+        }
+        h1 {
+            color: #1b5c6b;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #2d8a7d;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+        }
+        p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        .card {
+            background: #7dc8db22;
+            border: 2px solid #49c0e4;
+            border-radius: 14px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: 0 2px 12px rgba(73,192,228,0.08);
+        }
+        .card h1 {
+            font-size: 1.5rem;
+            color: #1b5c6b;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+        .img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 32px 0;
+        }
+        .img-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            border: 3px solid #49c0e4;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .img-section img:hover {
+            transform: scale(1.04);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 10px 28px;
+            background: #49c0e4;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(73,192,228,0.13);
+            transition: background 0.2s;
+        }
+        .back-link:hover {
+            background: #1b5c6b;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 4vw;
+            }
+            .card {
+                padding: 18px;
+            }
+            .img-section img {
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meio Ambiente</h1>
+        <div class="card">
+            <h1>Nosso Compromisso com o Planeta!</h1>
+            <p>Na ONG Cruzeiro do Sul, a defesa do meio ambiente é uma estrela que guia nossas ações. Acreditamos que o futuro do nosso planeta depende da conscientização e da atitude de hoje.</p>
+            <p>Trabalhamos na preservação de ecossistemas, na promoção da sustentabilidade e na educação ambiental para garantir que as futuras gerações também desfrutem de um mundo saudável e equilibrado.</p>
+            <p>Junte-se a nós nesta jornada vital! Pequenas ações, quando multiplicadas, geram um impacto imenso. Seja um guardião da natureza!</p>
+        </div>
+        <h2>Promover a sustentabilidade como descarte correto de resíduos faz a nossa missão!</h2>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPL_xY3BbKyD7OOjPesOSho1Z6sutpwR2vpQ&s" alt="Imagem ONG" id="nature-img">
+        </div>
+        <a class="back-link" href="index.html">Voltar ao menu inicial</a>
+    </div>
+    <script>
+        // Alerta ao clicar na imagem
+        document.getElementById('nature-img').addEventListener('click', function() {
+            alert('Cuidar do meio ambiente é cuidar do futuro!');
+        });
+    </script>
+</body>
+</html>

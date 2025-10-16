@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Educação</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e9e78f 0%, #7dc8db 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fffbe7;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px 32px 32px 32px;
+        }
+        h1 {
+            color: #2d5c6b;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #4e7d8a;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+        }
+        p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        .card {
+            background: #7dc8db22;
+            border: 2px solid #7dc8db;
+            border-radius: 14px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: 0 2px 12px rgba(125,200,219,0.08);
+        }
+        .card h1 {
+            font-size: 1.5rem;
+            color: #2d5c6b;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+        .img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 32px 0;
+        }
+        .img-section img {
+            width: 100%;
+            max-width: 340px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            border: 3px solid #7dc8db;
+            transition: transform 0.2s;
+        }
+        .img-section img:hover {
+            transform: scale(1.04);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 10px 28px;
+            background: #7dc8db;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(125,200,219,0.13);
+            transition: background 0.2s;
+        }
+        .back-link:hover {
+            background: #2d5c6b;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 4vw;
+            }
+            .card {
+                padding: 18px;
+            }
+            .img-section img {
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Educação</h1>
+        <p>
+            A ONG Cruzeiro do Sul desenvolve diversas atividades voltadas para a educação,<br>
+            incluindo programas de alfabetização, cursos profissionalizantes e oficinas de capacitação para jovens e adultos.<br>
+            Nosso objetivo é promover o acesso ao conhecimento e contribuir para o desenvolvimento pessoal e profissional dos beneficiários.
+        </p>
+        <h2>Um pouco sobre educação</h2>
+        <div class="card">
+            <h1>Sobre a Educação na ONG Cruzeiro do Sul</h1>
+            <p>
+                "Acreditamos que a educação é a chave para a transformação. A Cruzeiro do Sul, com seu forte compromisso social, vai além da sala de aula, promovendo o desenvolvimento humano em todas as suas potencialidades. Seu apoio nos ajuda a continuar formando profissionais competentes e cidadãos comprometidos com o futuro da nossa sociedade."
+            </p>
+        </div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmcLkEu7Tt9nBiVe5Z23D7sPBapX-l_gU5JA&s" alt="Imagem ONG">
+        </div>
+        <a class="back-link" href="index.html">Voltar ao menu inicial</a>
+    </div>
+    <script>
+        // Exemplo simples de interação: alerta ao clicar na imagem
+        document.querySelector('.img-section img').addEventListener('click', function() {
+            alert('Educação transforma vidas!');
+        });
+    </script>
+</body>
+</html>
